@@ -231,15 +231,23 @@ form.contact-form button.submit-btn {
 
 .timeline-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 0.8rem;
   margin-bottom: 0.5rem;
   position: relative;
+  flex-wrap: wrap;
+}
+
+.timeline-header h3 {
+  margin: 0;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .timeline-bullet {
   color: var(--accent);
   font-size: 1.4em;
+  margin-top: 0.2rem;
 }
 
 .timeline-date {
@@ -247,6 +255,8 @@ form.contact-form button.submit-btn {
   margin-right: 20px;
   color: var(--cream);
   font-size: 0.9em;
+  white-space: nowrap;
+  padding-top: 0.3rem;
 }
 
 .timeline-header a.accent {
