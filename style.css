@@ -29,16 +29,19 @@ body {
   background: var(--black);
   z-index: 100;
   animation: fadeOut 0.8s 3s forwards;
+  /* THE FIX: this overlay is purely decorative. It should never be able
+     to swallow clicks meant for the page underneath, no matter what the
+     animation/JS timing does. */
+  pointer-events: none;
 }
 
 .hello-world {
   font-size: 5vw;
   font-weight: 700;
   margin-bottom: 2rem;
-  opacity: 0;
+  opacity: 1;
   animation: fadeIn 0.8s 0.8s forwards;
   color: var(--accent);
-  opacity: 1;
   min-height: 1.2em;
 }
 
@@ -165,12 +168,12 @@ nav {
   z-index: -1;
 }
 
-.resume-btn:hover::before, 
+.resume-btn:hover::before,
 form.contact-form button.submit-btn:hover::before {
   width: 100%;
 }
 
-.resume-btn:active, 
+.resume-btn:active,
 form.contact-form button.submit-btn:active {
   transform: translateY(-1px) scale(0.98);
 }
@@ -220,10 +223,6 @@ form.contact-form button.submit-btn {
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.timeline-item::before {
-  display: none;
-}
-
 .timeline-item:hover {
   transform: translateY(-5px);
   border-color: var(--accent);
@@ -265,7 +264,7 @@ form.contact-form button.submit-btn {
   margin-top: 0.2rem;
 }
 
-.timeline-item li::before, 
+.timeline-item li::before,
 .education-highlights li::before {
   content: '▹';
   position: absolute;
@@ -306,7 +305,7 @@ form.contact-form button.submit-btn {
   background: rgba(210, 180, 140, 0.03);
 }
 
-.education-main p, 
+.education-main p,
 .education-highlights p {
   margin-top: 0;
   padding-left: 1.8rem;
@@ -499,7 +498,7 @@ a[href="mailto:aryanrajguru.2016@gmail.com"] {
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
-  .about-grid, .education-container, 
+  .about-grid, .education-container,
   .projects-grid, .achievements-grid,
   .contact-container {
     grid-template-columns: 1fr;
