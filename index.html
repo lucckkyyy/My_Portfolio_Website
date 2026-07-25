@@ -230,6 +230,9 @@ Computer Networks & Data Communication, Financial Analysis.</p>
     const text = 'Hello World';
     let i = 0;
     typingText.textContent = '';
+    setTimeout(() => {
+  document.querySelector('.intro-animation').style.display = 'none';
+}, 4000);
 
     function typeWriter() {
       if (i < text.length) {
@@ -270,7 +273,7 @@ Computer Networks & Data Communication, Financial Analysis.</p>
 
       // Active nav highlight on scroll
       const navLinks = document.querySelectorAll('.nav-right a');
-      const sectionIds = ['about', 'education', 'work', 'projects', 'skills', 'achievements', 'contact'];
+      const sectionIds = ['about', 'education', 'work', 'projects', 'achievements', 'contact'];
 
       window.addEventListener('scroll', () => {
         let current = '';
