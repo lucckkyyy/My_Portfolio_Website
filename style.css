@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aryan Rajguru</title>
-  <style>
 /* ===== BASE STYLES & VARIABLES ===== */
-:root {
-  --black: #000000;
-  --accent: #D2B48C;
-  --cream: #F5F5DC;
-  --white: #FFFFFF;
-}
-
 /* Global styles */
+html { background-color: #000000; }
+
 body {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: #000000;
+  color: #FFFFFF;
   font-family: "Roboto", Arial, sans-serif;
   margin: 0;
   line-height: 1.6;
@@ -33,7 +21,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--black);
+  background: #000000;
   z-index: 100;
   animation: fadeOut 0.8s 3s forwards;
   /* THE FIX: this overlay is purely decorative. It should never be able
@@ -48,14 +36,14 @@ body {
   margin-bottom: 2rem;
   opacity: 1;
   animation: fadeIn 0.8s 0.8s forwards;
-  color: var(--accent);
+  color: #D2B48C;
   min-height: 1.2em;
 }
 
 .intro-line {
   width: 0;
   height: 2px;
-  background: var(--accent);
+  background: #D2B48C;
   animation: grow 1s 0.5s forwards;
 }
 
@@ -85,7 +73,7 @@ h2:after {
   bottom: -10px;
   width: 60px;
   height: 2px;
-  background: var(--accent);
+  background: #D2B48C;
 }
 
 h3 {
@@ -93,7 +81,7 @@ h3 {
   margin: 1rem 0;
 }
 
-.accent { color: var(--accent); }
+.accent { color: #D2B48C; }
 
 /* ===== NAVIGATION ===== */
 nav {
@@ -109,7 +97,7 @@ nav {
 }
 
 .nav-right a {
-  color: var(--white);
+  color: #FFFFFF;
   text-decoration: none;
   margin-left: 2rem;
   position: relative;
@@ -122,7 +110,7 @@ nav {
   height: 1px;
   bottom: -2px;
   left: 0;
-  background: var(--accent);
+  background: #D2B48C;
   transition: width 0.3s;
 }
 
@@ -130,7 +118,7 @@ nav {
 
 /* Active nav link */
 .nav-right a.active {
-  color: var(--accent);
+  color: #D2B48C;
 }
 
 .nav-right a.active:after {
@@ -142,8 +130,8 @@ nav {
   display: inline-block;
   padding: 0.6rem 1.5rem;
   background: transparent;
-  color: var(--accent);
-  border: 1px solid var(--accent);
+  color: #D2B48C;
+  border: 1px solid #D2B48C;
   text-decoration: none;
   transition: all 0.4s ease;
   border-radius: 50px;
@@ -158,7 +146,7 @@ nav {
 }
 
 .resume-btn:hover, form.contact-form button.submit-btn:hover {
-  color: var(--black);
+  color: #000000;
   transform: translateY(-3px);
   box-shadow: 0 4px 12px rgba(210, 180, 140, 0.3);
 }
@@ -170,7 +158,7 @@ nav {
   left: 0;
   width: 0;
   height: 100%;
-  background: var(--accent);
+  background: #D2B48C;
   transition: width 0.4s ease;
   z-index: -1;
 }
@@ -203,7 +191,7 @@ form.contact-form button.submit-btn {
   max-width: 400px;
   height: auto;
   border-radius: 8px;
-  border: 2px solid var(--accent);
+  border: 2px solid #D2B48C;
   box-shadow: 0 4px 20px rgba(210, 180, 140, 0.2);
   transition: transform 0.3s ease;
   object-fit: cover;
@@ -232,7 +220,7 @@ form.contact-form button.submit-btn {
 
 .timeline-item:hover {
   transform: translateY(-5px);
-  border-color: var(--accent);
+  border-color: #D2B48C;
   box-shadow: 0 8px 20px rgba(210, 180, 140, 0.1);
 }
 
@@ -252,7 +240,7 @@ form.contact-form button.submit-btn {
 }
 
 .timeline-bullet {
-  color: var(--accent);
+  color: #D2B48C;
   font-size: 1.4em;
   margin-top: 0.2rem;
 }
@@ -260,21 +248,21 @@ form.contact-form button.submit-btn {
 .timeline-date {
   margin-left: auto;
   margin-right: 20px;
-  color: var(--cream);
+  color: #F5F5DC;
   font-size: 0.9em;
   white-space: nowrap;
   padding-top: 0.3rem;
 }
 
 .timeline-header a.accent {
-  color: var(--accent);
+  color: #D2B48C;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .timeline-header a.accent:hover {
   text-decoration: underline;
-  text-decoration-color: var(--accent);
+  text-decoration-color: #D2B48C;
 }
 
 .timeline-item p {
@@ -286,7 +274,7 @@ form.contact-form button.submit-btn {
   content: '▹';
   position: absolute;
   left: -1.5rem;
-  color: var(--accent);
+  color: #D2B48C;
 }
 
 /* ===== EDUCATION ===== */
@@ -299,14 +287,14 @@ form.contact-form button.submit-btn {
 }
 
 .education-bullet {
-  color: var(--accent);
+  color: #D2B48C;
   font-size: 1.4em;
 }
 
 .education-date {
   margin-left: auto;
   margin-right: 20px;
-  color: var(--cream);
+  color: #F5F5DC;
   font-size: 0.9em;
 }
 
@@ -341,7 +329,7 @@ form.contact-form button.submit-btn {
 .project-card:hover, .achievement-card:hover,
 .education-main:hover, .education-highlights:hover {
   transform: translateY(-5px);
-  border-color: var(--accent);
+  border-color: #D2B48C;
   box-shadow: 0 8px 20px rgba(210, 180, 140, 0.1);
 }
 
@@ -363,7 +351,7 @@ form.contact-form button.submit-btn {
   content: '▹';
   position: absolute;
   left: 0;
-  color: var(--accent);
+  color: #D2B48C;
   font-size: 1.1em;
   top: 50%;
   transform: translateY(-50%);
@@ -384,12 +372,12 @@ form.contact-form button.submit-btn {
   content: '▹';
   position: absolute;
   left: -1.5rem;
-  color: var(--accent);
+  color: #D2B48C;
   font-size: 1.1em;
 }
 
 .cert-link {
-  color: var(--white);
+  color: #FFFFFF;
   text-decoration: none !important;
   display: inline-flex;
   align-items: center;
@@ -398,9 +386,9 @@ form.contact-form button.submit-btn {
 }
 
 .cert-link:hover {
-  color: var(--accent) !important;
+  color: #D2B48C !important;
   text-decoration: underline !important;
-  text-decoration-color: var(--accent) !important;
+  text-decoration-color: #D2B48C !important;
 }
 
 .link-icon {
@@ -429,7 +417,7 @@ form.contact-form button.submit-btn {
   content: '▹';
   position: absolute;
   left: -1.5rem;
-  color: var(--accent);
+  color: #D2B48C;
   font-size: 1.1em;
 }
 
@@ -452,7 +440,7 @@ form.contact-form button.submit-btn {
   border-radius: 8px;
   padding: 0.8rem;
   margin-bottom: 1rem;
-  color: var(--white);
+  color: #FFFFFF;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 1rem;
   transition: all 0.3s;
@@ -461,7 +449,7 @@ form.contact-form button.submit-btn {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: var(--accent);
+  border-color: #D2B48C;
   box-shadow: 0 0 0 2px rgba(210, 180, 140, 0.2);
 }
 
@@ -470,14 +458,14 @@ form.contact-form button.submit-btn {
 }
 
 .contact-info a {
-  color: var(--white) !important;
+  color: #FFFFFF !important;
   text-decoration: none !important;
   display: inline-block;
 }
 
 .contact-info a:hover {
   text-decoration: underline !important;
-  text-decoration-color: var(--accent) !important;
+  text-decoration-color: #D2B48C !important;
 }
 
 a[href="mailto:aryanrajguru.2016@gmail.com"] {
@@ -548,13 +536,13 @@ a[href="mailto:aryanrajguru.2016@gmail.com"] {
 .hero-tagline {
   font-size: 1.35rem;
   font-weight: 700;
-  color: var(--accent);
+  color: #D2B48C;
   line-height: 1.4;
   margin: 0 0 1.2rem;
 }
 
 .card-hook {
-  color: var(--accent);
+  color: #D2B48C;
   font-style: italic;
   font-size: 1.05rem;
   margin: 0.2rem 0 0.9rem;
@@ -566,7 +554,7 @@ a[href="mailto:aryanrajguru.2016@gmail.com"] {
 }
 
 .stat {
-  color: var(--accent);
+  color: #D2B48C;
   font-weight: 700;
 }
 
@@ -592,7 +580,7 @@ a[href="mailto:aryanrajguru.2016@gmail.com"] {
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--accent);
+  color: #D2B48C;
 }
 
 .education-highlights .bullets {
@@ -613,7 +601,7 @@ a[href="mailto:aryanrajguru.2016@gmail.com"] {
   padding: 0.2rem 0.8rem;
   font-size: 0.8rem;
   letter-spacing: 0.3px;
-  color: var(--cream);
+  color: #F5F5DC;
   border: 1px solid rgba(210, 180, 140, 0.35);
   border-radius: 50px;
   background: rgba(210, 180, 140, 0.06);
@@ -631,7 +619,7 @@ a[href="mailto:aryanrajguru.2016@gmail.com"] {
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--accent);
+  color: #D2B48C;
 }
 
 .project-card .card-hook,
@@ -664,7 +652,7 @@ a[href="mailto:aryanrajguru.2016@gmail.com"] {
   display: block;
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--accent);
+  color: #D2B48C;
   line-height: 1.1;
 }
 
@@ -672,7 +660,7 @@ a[href="mailto:aryanrajguru.2016@gmail.com"] {
   display: block;
   margin-top: 0.3rem;
   font-size: 0.8rem;
-  color: var(--cream);
+  color: #F5F5DC;
 }
 
 /* Spacing between cards (these grids had no base rule) */
@@ -685,288 +673,3 @@ a[href="mailto:aryanrajguru.2016@gmail.com"] {
 @media (max-width: 768px) {
   .stats-row { grid-template-columns: 1fr; }
 }
-
-
-</style>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-  <!-- Animated Intro -->
-  <div class="intro-animation">
-    <div class="hello-world" id="typing-text"></div>
-    <div class="intro-line"></div>
-    <div class="cursor-glow" id="cursorGlow"></div>
-  </div>
-
-  <!-- Main Content -->
-  <main>
-    <nav class="fade-in">
-      <div class="nav-left">
-        <span class="accent">AR</span>
-      </div>
-      <div class="nav-right">
-        <a href="#about"><b>ABOUT ME</b></a>
-        <a href="#education"><b>EDUCATION</b></a>
-        <a href="#work"><b>EXPERIENCE</b></a>
-        <a href="#projects"><b>PROJECTS</b></a>
-        <a href="#achievements"><b>ACHIEVEMENTS</b></a>
-        <a href="#contact"><b>CONTACT ME</b></a>
-      </div>
-    </nav>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-      <div class="about-grid">
-        <div class="about-text">
-          <h2>ABOUT ME</h2> <br>
-          <h3>Hey, I'm Aryan Rajguru.</h3>
-          <p class="hero-tagline">I keep critical systems secure, and I build the software that makes them smarter.</p>
-          <p>I'm a Senior studying Computer Science &amp; Engineering at the University of Toledo, with a passion for building intelligent, scalable software using machine learning and AI.</p>
-          <p>By day, I'm an IT Systems and Infrastructure Analyst at UTMC, my university's hospital, where I secure and support critical systems in a 24/7, zero-downtime environment. Outside of work, I build AI agents, cloud-native apps, segmented networks, and even PLC-controlled pump stations.</p>
-          <ul class="tag-list"><li>Python</li><li>JavaScript</li><li>Dart</li><li>Bash</li><li>Docker</li><li>Kubernetes</li><li>AWS</li><li>GCP</li><li>Active Directory</li><li>Intune</li><li>Imprivata</li><li>Power BI</li></ul>
-          <a href="Aryan Rajguru Resume.pdf" download="Aryan Rajguru Resume.pdf" class="resume-btn">Download Resume</a>
-        </div>
-        <div class="about-photo">
-          <img src="AryanOttawaPark.jpg" alt="Aryan Rajguru" class="profile-image">
-        </div>
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section">
-      <h2>EDUCATION</h2> <br>
-      <div class="education-container">
-        <div class="education-main">
-          <div class="education-header">
-            <span class="education-bullet">▹</span>
-            <h3>The University of Toledo</h3>
-            <span class="education-date">Anticipated Grad: May 2027</span>
-          </div>
-          <p>B.S. in Computer Science &amp; Engineering</p>
-          <ul class="tag-list"><li>Object Oriented Programming</li><li>Client-Server Computing</li><li>Software Engineering &amp; Human Interface</li><li>Database Driven Websites</li><li>Computer Networks &amp; Data Communication</li><li>Financial Analysis</li></ul>
-        </div>
-        <div class="education-highlights">
-          <div class="highlights-header">
-            <span class="education-bullet">▹</span>
-            <h3>Key Highlights</h3>
-          </div>
-          <ul class="bullets"><li>Built a strong foundation in software engineering and IT through hands-on work with industry-standard tools.</li><li>Went deep on Software Design, Web Server Administration, Operating Systems, and Client-Server Computing.</li><li>Grew my leadership and teamwork through the AIML and ACM clubs on campus.</li></ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="work" class="section">
-      <h2>EXPERIENCE</h2> <br>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <span class="timeline-bullet">▹</span>
-            <h3>IT Systems and Infrastructure Analyst - Level 2<br>
-               <a href="https://health.utoledo.edu/" target="_blank" class="accent">@University of Toledo Medical Campus</a></h3>
-            <span class="timeline-date" style="margin-right: 20px;">Aug 2025 - Present</span>
-          </div>
-          <ul class="bullets"><li>Engineered Imprivata RBAC/SSO workflows across <span class="stat">500+</span> shared clinical workstations, mirroring operator-console and HMI security from OT settings.</li><li>Hardened and patched <span class="stat">500+</span> endpoints under strict change control, with Tier-2/3 break-fix support and root-cause analysis across Epic EHR, Microsoft 365, and the network.</li><li>Enforced HIPAA/NIST-aligned compliance through vulnerability audits, privilege reviews, and NIST SP 800-88 asset decommissioning.</li></ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <span class="timeline-bullet">▹</span>
-            <h3>IT Systems and Infrastructure Analyst - Level 1<br>
-               <a href="https://health.utoledo.edu/" target="_blank" class="accent">@University of Toledo Medical Campus</a></h3>
-            <span class="timeline-date" style="margin-right: 20px;">Dec 2024 - Aug 2025</span>
-          </div>
-          <ul class="bullets"><li>Diagnosed and resolved <span class="stat">15+</span> software, hardware, and network incidents a week, configuring and imaging machines and managing access with Intune and Active Directory.</li><li>Cut login-related escalations by <span class="stat">80%</span> by troubleshooting Imprivata single sign-on on shared clinical workstations.</li><li>Built Power BI dashboards of ticket volume and resolution trends that gave Tier-2 and leadership visibility into recurring issues, while supporting Epic EHR, VMware, BitLocker, and Cisco Finesse.</li></ul>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-header">
-            <span class="timeline-bullet">▹</span>
-            <h3>Mathematics Instructor <span class="accent"></span></h3>
-            <span class="timeline-date" style="margin-right: 20px;">May 2025 - July 2025</span>
-          </div>
-          <ul class="bullets"><li>Taught <span class="stat">10+</span> students arithmetic, algebra, geometry, and statistics through one-on-one and small-group sessions on Zoom and Google Classroom.</li><li>Built personalized lesson plans and tracked progress with regular assessments.</li><li>Adapted my teaching to close individual learning gaps, consistently improving grades and academic confidence.</li></ul>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2>PROJECTS I'M PROUD OF</h2> <br>
-      <div class="projects-grid">
-
-        <div class="project-card">
-          <span class="project-cat">Networking &amp; Security</span>
-          <h3 class="project-title">
-            <a href="https://github.com/lucckkyyy/careguard-network" target="_blank" class="cert-link">HealthNet - Segmented Clinical Network <span class="link-icon">↗</span></a>
-          </h3>
-          <p class="card-hook">A hospital-style network where every zone only talks to who it should.</p>
-          <ul class="bullets"><li>Segmented <span class="stat">6 VLANs</span> behind least-privilege ACLs, passing <span class="stat">20/20</span> allow/deny tests (<span class="stat">100%</span> pass rate).</li><li>Hardened access with SSH-only management, role-based AAA, port security, and a blackhole native VLAN, mapped to <span class="stat">8</span> NIST 800-53 controls.</li><li>Diagnosed <span class="stat">4</span> injected faults (trunk, DHCP, ACL order, gateway), with a root-cause analysis for each.</li></ul>
-          <ul class="tag-list"><li>Cisco Packet Tracer</li><li>VLANs</li><li>ACLs</li><li>AAA</li><li>Syslog</li></ul>
-        </div>
-
-        <div class="project-card">
-          <span class="project-cat">AI &amp; Cloud</span>
-          <h3 class="project-title">
-            <a href="https://github.com/lucckkyyy/Amazon_Product_Recommender_Chatbot" target="_blank" class="cert-link">Amazon Product Recommender Chatbot <span class="link-icon">↗</span></a>
-          </h3>
-          <p class="card-hook">Ask for a product in plain English and get answers from <span class="stat">500K+</span> listings.</p>
-          <ul class="bullets"><li>Built a context-aware RAG chatbot with LangChain, Groq LLM, and HuggingFace embeddings, reaching <span class="stat">90%</span> retrieval accuracy.</li><li>Stored vectors in Astra DB and shipped the whole pipeline containerized on Kubernetes (GCP).</li><li>Monitored it live with Prometheus and Grafana dashboards for latency, throughput, and container health.</li></ul>
-          <ul class="tag-list"><li>Python</li><li>LangChain</li><li>RAG</li><li>Astra DB</li><li>Docker</li><li>Kubernetes</li><li>Prometheus</li><li>Grafana</li></ul>
-        </div>
-
-        <div class="project-card">
-          <span class="project-cat">Industrial Automation</span>
-          <h3 class="project-title">
-            <a href="https://github.com/lucckkyyy/plc-pump-controller" target="_blank" class="cert-link">PLC Pump Controller - Three-Pump Batching Station <span class="link-icon">↗</span></a>
-          </h3>
-          <p class="card-hook">A pump station that keeps running when a pump fails.</p>
-          <ul class="bullets"><li>Automated a three-pump tank batching process in Rockwell RSLogix, passing <span class="stat">5/5</span> test scenarios.</li><li>Built fail detection, lead/lag rotation, and latched alarms for automatic standby switchover in <span class="stat">100%</span> of failure tests.</li><li>Ported the ladder logic to Siemens TIA Portal and verified it in S7-PLCSIM, with <span class="stat">3/3</span> core functions behaving identically.</li></ul>
-          <ul class="tag-list"><li>Rockwell RSLogix</li><li>Siemens TIA Portal</li><li>S7-PLCSIM</li><li>Ladder Logic</li></ul>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Achievements Section -->
-    <section id="achievements" class="section">
-      <h2>ACHIEVEMENTS</h2> <br>
-      <div class="achievements-grid">
-        <div class="achievement-card">
-          <h3>Certifications</h3>
-          <ul class="certifications-list">
-            <li>
-              <a href="AWS Solutions Architecture Certificate.pdf" target="_blank" class="cert-link">
-                AWS Solutions Architecture <span class="link-icon">↗</span>
-              </a>
-            </li>
-            <li>
-              <a href="Prompt Engineering for ChatGPT.pdf" target="_blank" class="cert-link">
-                Prompt Engineering for ChatGPT <span class="link-icon">↗</span>
-              </a>
-            </li>
-            <li>
-              <a href="Introduction to Generative AI Certificate.pdf" target="_blank" class="cert-link">
-                Introduction to Generative AI <span class="link-icon">↗</span>
-              </a>
-            </li>
-            <li>
-              <a href="Coursera- Intro to Front-End Development.pdf" target="_blank" class="cert-link">
-                Introduction to Front-End Development <span class="link-icon">↗</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="achievement-card">
-          <h3>Awards</h3>
-          <ul class="awards-list">
-            <li>Dean's List</li>
-            <li>Rocket Award Scholarship</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2>GET IN TOUCH</h2> <br>
-      <h3>Have a role, a project, or just a question? <br> Shoot me a message, I'd love to hear from you.</h3>
-      <div class="contact-container">
-        <form class="contact-form" action="https://formspree.io/f/mkgbebko" method="POST">
-          <input type="hidden" name="_gotcha" style="display:none">
-          <input type="hidden" name="_next" value="https://aryanrajguru.com/thank-you.html">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="_replyto" placeholder="Your Email" required>
-          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-          <button type="submit" class="submit-btn">Send Message</button>
-        </form>
-        <div class="contact-info">
-          <p><span class="accent">LinkedIn:</span> <a href="https://linkedin.com/in/aryanrajguru" target="_blank" class="clean-link">linkedin.com/in/aryanrajguru <span class="link-icon">↗</span></a></p>
-          <p><span class="accent">Github:</span> <a href="https://github.com/lucckkyyy" target="_blank" class="clean-link">github.com/lucckkyyy <span class="link-icon">↗</span></a></p>
-          <p><span class="accent">Email:</span> <a href="mailto:aryanrajguru.2016@gmail.com" class="clean-link">aryanrajguru.2016@gmail.com <span class="link-icon">↗</span></a></p>
-          <p><span class="accent">Phone:</span> <a href="tel:9372435219" class="rajguru-contact-phone-link">(937) 243-5219 <span class="link-icon">↗</span></a></p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    // Typing effect with cursor
-    const typingText = document.getElementById('typing-text');
-    const text = 'Hello World';
-    let i = 0;
-    typingText.textContent = '';
-
-    // Belt-and-suspenders: force the intro overlay out of the DOM's
-    // interaction path even if the CSS fade-out animation never runs.
-    setTimeout(() => {
-      const intro = document.querySelector('.intro-animation');
-      if (intro) intro.style.display = 'none';
-    }, 4000);
-
-    function typeWriter() {
-      if (i < text.length) {
-        typingText.textContent = text.substring(0, i + 1) + '|';
-        i++;
-        setTimeout(typeWriter, 120);
-      } else {
-        let visible = true;
-        setInterval(() => {
-          typingText.textContent = visible ? text + '|' : text;
-          visible = !visible;
-        }, 500);
-      }
-    }
-
-    setTimeout(typeWriter, 300);
-
-    // Smooth scroll reveal with directions
-    const revealElements = document.querySelectorAll('.section');
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry, index) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => {
-            entry.target.classList.add('visible');
-          }, index * 100);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    revealElements.forEach(el => revealObserver.observe(el));
-
-    // Cursor glow
-    const cursorGlow = document.getElementById('cursorGlow');
-    document.addEventListener('mousemove', (e) => {
-      cursorGlow.style.left = e.clientX + 'px';
-      cursorGlow.style.top = e.clientY + 'px';
-    });
-
-    // Active nav highlight on scroll
-    const navLinks = document.querySelectorAll('.nav-right a');
-    const sectionIds = ['about', 'education', 'work', 'projects', 'achievements', 'contact'];
-
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sectionIds.forEach(id => {
-        const section = document.getElementById(id);
-        if (section && window.scrollY >= section.offsetTop - 200) {
-          current = id;
-        }
-      });
-
-      navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
-</body>
-</html>
